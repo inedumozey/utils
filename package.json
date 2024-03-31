@@ -1,0 +1,22 @@
+{
+  "name": "@mozeyinedu/utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "rm -rf lib/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "publish": "npm publish --access public",
+    "push": "git add . && git commit -m 'updated' && git push origin master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  }
+}
